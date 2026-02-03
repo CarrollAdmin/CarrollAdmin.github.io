@@ -1,1 +1,83 @@
-<p>Hello 大家好</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoTbench</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="title">IoTBench</h1>
+      <p class="subtitle">A Benchmark for Diverse IoT Applications</p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn"><span>📄</span> Paper</a>
+        <a href="#" class="btn"><span>💻</span> Code</a>
+        <a href="#" class="btn"><span>🗄️</span> Data</a>
+        <a href="#" class="btn primary"><span>⬆️</span> Submit</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BENCH SWITCH ===== -->
+  <!-- <section class="bench-tabs">
+    <button class="bench-tab active" data-bench="main">Multi-SWE-bench</button>
+    <button class="bench-tab" data-bench="flash">Multi-SWE-bench flash</button>
+    <button class="bench-tab" data-bench="mini">Multi-SWE-bench mini</button>
+  </section> -->
+
+  <!-- ===== LEADERBOARD ===== -->
+  <section class="leaderboard">
+    <h2>Leaderboard</h2>
+
+    <!-- Language Tabs -->
+    <div class="lang-tabs">
+      <button class="lang-tab active">All</button>
+      <button class="lang-tab">ESP32</button>
+      <button class="lang-tab">Arduino</button>
+      <button class="lang-tab">STM32</button>
+      <button class="lang-tab">RIOT</button>
+      <button class="lang-tab">Zephyr</button>
+      <button class="lang-tab">Contiki</button>
+      <button class="lang-tab">FreeRTOS</button>
+      <button class="lang-tab">Sensing</button>
+      <button class="lang-tab">IFTTT</button>
+      <button class="lang-tab">Driver</button>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th colspan="4">Metrics(%)</th>
+            <th>Org</th>
+            <th>Date</th>
+            <th>Logs</th>
+            <th>Trajs</th>
+            <th>Site</th>
+          </tr>
+          <tr class="subhead">
+            <th></th>
+            <th>API</th>
+            <th>Header</th>
+            <th>Compliation</th>
+            <th>Pass</th>
+            <th colspan="5"></th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <!-- JS 动态填充 -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
