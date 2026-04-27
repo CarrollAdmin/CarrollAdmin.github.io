@@ -1,0 +1,964 @@
+[
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_01",
+        "description": "Create one TAP rule for the home_5 smart home: when the bathroom motion sensor detects motion, turn on the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true THEN set device 1 bathroom light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_02",
+        "description": "Create one TAP rule for the home_5 smart home: when the bathroom motion sensor detects no motion, turn off the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == false THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_03",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom illumination is below 100 lux, turn on the bedroom color light.",
+        "answer": "IF device 5 bedroom illumination-sensor.illumination < 100 THEN set device 3 bedroom light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_04",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom illumination is below 100 lux, set the bedroom color light brightness to 70.",
+        "answer": "IF device 5 bedroom illumination-sensor.illumination < 100 THEN set device 3 bedroom light.brightness = 70",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_05",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom illumination is below 100 lux, set the bedroom color light mode to Day.",
+        "answer": "IF device 5 bedroom illumination-sensor.illumination < 100 THEN set device 3 bedroom light.mode = Day",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_06",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom illumination is below 50 lux, set the bedroom color light color temperature to 3000 kelvin.",
+        "answer": "IF device 5 bedroom illumination-sensor.illumination < 50 THEN set device 3 bedroom light.color-temperature = 3000",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_07",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom illumination is above 500 lux, turn off the bedroom color light.",
+        "answer": "IF device 5 bedroom illumination-sensor.illumination > 500 THEN set device 3 bedroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_5/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_5/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_08",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom air conditioner temperature is above 28 celsius, turn on the bedroom air conditioner; then set the bedroom air conditioner mode to Cool; then set the bedroom air conditioner target temperature to 26 celsius.",
+        "answer": "IF device 4 bedroom environment.temperature > 28 THEN set device 4 bedroom air-conditioner.on = true AND set device 4 bedroom air-conditioner.mode = Cool AND set device 4 bedroom air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_5/spec/xiaomi.aircondition.mc7.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_09",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom air conditioner temperature is above 30 celsius, set the bedroom air conditioner fan level to Level3.",
+        "answer": "IF device 4 bedroom environment.temperature > 30 THEN set device 4 bedroom fan-control.fan-level = Level3",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_5/spec/xiaomi.aircondition.mc7.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_5_tap_10",
+        "description": "Create one TAP rule for the home_5 smart home: when the bedroom air conditioner temperature is below 24 celsius, turn off the bedroom air conditioner.",
+        "answer": "IF device 4 bedroom environment.temperature < 24 THEN set device 4 bedroom air-conditioner.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_5/info.json",
+            "IoTBench/IFTTT/home_5/devices.json",
+            "IoTBench/IFTTT/home_5/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_5/spec/xiaomi.aircondition.mc7.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_01",
+        "description": "Create one TAP rule for the home_10 smart home: when the bathroom motion sensor detects motion and the bathroom illumination is below 80 lux, turn on the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true AND device 3 bathroom illumination-sensor.illumination < 80 THEN set device 1 bathroom light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_02",
+        "description": "Create one TAP rule for the home_10 smart home: when the bathroom motion sensor detects motion and the bathroom illumination is below 80 lux, set the bathroom white light brightness to 80.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true AND device 3 bathroom illumination-sensor.illumination < 80 THEN set device 1 bathroom light.brightness = 80",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_03",
+        "description": "Create one TAP rule for the home_10 smart home: when the bathroom motion sensor detects no motion, turn off the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == false THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_04",
+        "description": "Create one TAP rule for the home_10 smart home: when the bathroom illumination is above 500 lux, turn off the bathroom white light.",
+        "answer": "IF device 3 bathroom illumination-sensor.illumination > 500 THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_05",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom temperature is above 28 celsius, turn on the bedroom air conditioner.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature > 28 THEN set device 5 bedroom air-conditioner.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_10/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_06",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom temperature is above 28 celsius, set the bedroom air conditioner mode to Cool; then set the bedroom air conditioner target temperature to 26 celsius.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature > 28 THEN set device 5 bedroom air-conditioner.mode = Cool AND set device 5 bedroom air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_10/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_07",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom temperature is above 30 celsius, set the bedroom air conditioner fan level to Level4.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature > 30 THEN set device 5 bedroom fan-control.fan-level = Level4",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_10/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_08",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom temperature is below 24 celsius, turn off the bedroom air conditioner.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature < 24 THEN set device 5 bedroom air-conditioner.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_10/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_09",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom relative humidity is above 70%, set the bedroom air conditioner mode to Dry.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.relative-humidity > 70 THEN set device 5 bedroom air-conditioner.mode = Dry",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_10/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_10/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_10",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom illumination is below 100 lux, turn on the bedroom color light; then set the bedroom color light brightness to 60.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination < 100 THEN set device 4 bedroom light.on = true AND set device 4 bedroom light.brightness = 60",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_11",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom illumination is below 50 lux, set the bedroom color light color temperature to 3000 kelvin.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination < 50 THEN set device 4 bedroom light.color-temperature = 3000",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_12",
+        "description": "Create one TAP rule for the home_10 smart home: when the bedroom illumination is above 500 lux, turn off the bedroom color light.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination > 500 THEN set device 4 bedroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_13",
+        "description": "Create one TAP rule for the home_10 smart home: when the living room motion sensor detects motion and the living room illumination is below 80 lux, turn on the living room color light; then set the living room color light brightness to 70.",
+        "answer": "IF device 9 living room motion-sensor.motion-state == true AND device 10 living room illumination-sensor.illumination < 80 THEN set device 8 living room light.on = true AND set device 8 living room light.brightness = 70",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_10_tap_14",
+        "description": "Create one TAP rule for the home_10 smart home: when the living room motion sensor detects no motion, turn off the living room color light.",
+        "answer": "IF device 9 living room motion-sensor.motion-state == false THEN set device 8 living room light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_10/info.json",
+            "IoTBench/IFTTT/home_10/devices.json",
+            "IoTBench/IFTTT/home_10/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_10/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_10/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_01",
+        "description": "Create one TAP rule for the home_20 smart home: when the bathroom motion sensor detects motion and the bathroom illumination is below 80 lux, turn on the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true AND device 3 bathroom illumination-sensor.illumination < 80 THEN set device 1 bathroom light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_02",
+        "description": "Create one TAP rule for the home_20 smart home: when the bathroom motion sensor detects no motion, turn off the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == false THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_03",
+        "description": "Create one TAP rule for the home_20 smart home: when the bathroom illumination is above 500 lux, turn off the bathroom white light.",
+        "answer": "IF device 3 bathroom illumination-sensor.illumination > 500 THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_04",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom illumination is below 100 lux, turn on the bedroom color light; then set the bedroom color light brightness to 60.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination < 100 THEN set device 4 bedroom light.on = true AND set device 4 bedroom light.brightness = 60",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_05",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom illumination is above 500 lux, turn off the bedroom color light.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination > 500 THEN set device 4 bedroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_06",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom temperature is above 28 celsius, turn on the bedroom air conditioner; then set the bedroom air conditioner mode to Cool; then set the bedroom air conditioner target temperature to 26 celsius.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature > 28 THEN set device 5 bedroom air-conditioner.on = true AND set device 5 bedroom air-conditioner.mode = Cool AND set device 5 bedroom air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_07",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom temperature is above 30 celsius, set the bedroom air conditioner fan level to Level4.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature > 30 THEN set device 5 bedroom fan-control.fan-level = Level4",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_08",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom temperature is below 24 celsius, turn off the bedroom air conditioner.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.temperature < 24 THEN set device 5 bedroom air-conditioner.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_09",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom relative humidity is below 35%, turn on the bedroom humidifier; then set the bedroom humidifier target humidity to 50%.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.relative-humidity < 35 THEN set device 10 bedroom humidifier.on = true AND set device 10 bedroom humidifier.target-humidity = 50",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/info/zhimi.humidifier.ca4.json",
+            "IoTBench/IFTTT/home_20/spec/zhimi.humidifier.ca4.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_10",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom relative humidity is above 60%, turn off the bedroom humidifier.",
+        "answer": "IF device 7 bedroom temperature-humidity-sensor.relative-humidity > 60 THEN set device 10 bedroom humidifier.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_20/info/zhimi.humidifier.ca4.json",
+            "IoTBench/IFTTT/home_20/spec/zhimi.humidifier.ca4.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_11",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom illumination is above 500 lux, set the bedroom curtain motor control to Open.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination > 500 THEN set device 9 bedroom curtain.motor-control = Open",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/info/lumi.curtain.mcn005.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.curtain.mcn005.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_12",
+        "description": "Create one TAP rule for the home_20 smart home: when the bedroom illumination is below 50 lux, set the bedroom curtain motor control to Close.",
+        "answer": "IF device 6 bedroom illumination-sensor.illumination < 50 THEN set device 9 bedroom curtain.motor-control = Close",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/info/lumi.curtain.mcn005.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.curtain.mcn005.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_13",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room motion sensor detects motion and the living room illumination is below 80 lux, turn on the living room color light; then set the living room color light brightness to 70.",
+        "answer": "IF device 12 living room motion-sensor.motion-state == true AND device 13 living room illumination-sensor.illumination < 80 THEN set device 11 living room light.on = true AND set device 11 living room light.brightness = 70",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_14",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room motion sensor detects no motion, turn off the living room white light.",
+        "answer": "IF device 12 living room motion-sensor.motion-state == false THEN set device 14 living room light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.mono1.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_15",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room illumination is below 60 lux, turn on the living room \u5e26\u98ce\u6247\u7684color light; then set the living room \u5e26\u98ce\u6247\u7684color light brightness to 65.",
+        "answer": "IF device 13 living room illumination-sensor.illumination < 60 THEN set device 15 living room light.on = true AND set device 15 living room light.brightness = 65",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.fancl6.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.fancl6.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_16",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room illumination is above 500 lux, turn off the living room \u5e26\u98ce\u6247\u7684color light.",
+        "answer": "IF device 13 living room illumination-sensor.illumination > 500 THEN set device 15 living room light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.fancl6.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.fancl6.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_17",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room air purifier PM2.5 density is above 75, turn on the living room air purifier; then set the living room air purifier mode to Auto.",
+        "answer": "IF device 16 living room environment.pm2.5-density > 75 THEN set device 16 living room air-purifier.on = true AND set device 16 living room air-purifier.mode = Auto",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/dmaker.airpurifier.f20.json",
+            "IoTBench/IFTTT/home_20/spec/dmaker.airpurifier.f20.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_18",
+        "description": "Create one TAP rule for the home_20 smart home: when the living room \u7acb\u5f0fair conditioner temperature is above 29 celsius, turn on the living room \u7acb\u5f0fair conditioner; then set the living room \u7acb\u5f0fair conditioner target temperature to 26 celsius.",
+        "answer": "IF device 17 living room environment.temperature > 29 THEN set device 17 living room air-conditioner.on = true AND set device 17 living room air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_20/spec/xiaomi.aircondition.mc7.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_19",
+        "description": "Create one TAP rule for the home_20 smart home: when the kitchen motion sensor detects motion, turn on the kitchen white light.",
+        "answer": "IF device 20 kitchen motion-sensor.motion-state == true THEN set device 18 kitchen light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_20/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_20/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_20",
+        "description": "Create one TAP rule for the home_20 smart home: when the kitchen range hood PM2.5 density is above 100, turn on the kitchen range hood; then set the kitchen range hood fan level to High.",
+        "answer": "IF device 19 kitchen environment.pm2.5-density > 100 THEN set device 19 kitchen hood.on = true AND set device 19 kitchen fan-control.fan-level = High",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/cykj.hood.jyj22.json",
+            "IoTBench/IFTTT/home_20/spec/cykj.hood.jyj22.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_20_tap_21",
+        "description": "Create one TAP rule for the home_20 smart home: when the kitchen left stove level is not Close, turn on the kitchen range hood.",
+        "answer": "IF device 19 kitchen hood-stove-integrate.left-stove-level != Close THEN set device 19 kitchen light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_20/info.json",
+            "IoTBench/IFTTT/home_20/devices.json",
+            "IoTBench/IFTTT/home_20/info/cykj.hood.jyj22.json",
+            "IoTBench/IFTTT/home_20/spec/cykj.hood.jyj22.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_01",
+        "description": "Create one TAP rule for the home_30 smart home: when the bathroom motion sensor detects motion and the bathroom illumination is below 80 lux, turn on the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true AND device 3 bathroom illumination-sensor.illumination < 80 THEN set device 1 bathroom light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_02",
+        "description": "Create one TAP rule for the home_30 smart home: when the bathroom motion sensor detects no motion, turn off the bathroom white light.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == false THEN set device 1 bathroom light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_03",
+        "description": "Create one TAP rule for the home_30 smart home: when the bathroom motion sensor detects motion, turn on the bathroom water heater; then set the bathroom water heater target temperature to 45 celsius.",
+        "answer": "IF device 2 bathroom motion-sensor.motion-state == true THEN set device 4 bathroom water-heater.on = true AND set device 4 bathroom water-heater.target-temperature = 45",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/viomi.waterheater.e14.json",
+            "IoTBench/IFTTT/home_30/spec/viomi.waterheater.e14.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_04",
+        "description": "Create one TAP rule for the home_30 smart home: when the bathroom water-heater temperature reaches at least 45 celsius, set the bathroom water heater mode to Normal.",
+        "answer": "IF device 4 bathroom water-heater.temperature >= 45 THEN set device 4 bathroom water-heater.mode = Normal",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/viomi.waterheater.e14.json",
+            "IoTBench/IFTTT/home_30/spec/viomi.waterheater.e14.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_05",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 illumination is below 100 lux, turn on the bedroom 1 color light; then set the bedroom 1 color light brightness to 60.",
+        "answer": "IF device 7 bedroom 1 illumination-sensor.illumination < 100 THEN set device 5 bedroom 1 light.on = true AND set device 5 bedroom 1 light.brightness = 60",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_06",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 illumination is above 500 lux, turn off the bedroom 1 color light.",
+        "answer": "IF device 7 bedroom 1 illumination-sensor.illumination > 500 THEN set device 5 bedroom 1 light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_07",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 temperature is above 28 celsius, turn on the bedroom 1 air conditioner; then set the bedroom 1 air conditioner mode to Cool; then set the bedroom 1 air conditioner target temperature to 26 celsius.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.temperature > 28 THEN set device 6 bedroom 1 air-conditioner.on = true AND set device 6 bedroom 1 air-conditioner.mode = Cool AND set device 6 bedroom 1 air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_08",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 temperature is below 24 celsius, turn off the bedroom 1 air conditioner.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.temperature < 24 THEN set device 6 bedroom 1 air-conditioner.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_09",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 relative humidity is below 35%, turn on the bedroom 1 humidifier; then set the bedroom 1 humidifier target humidity to 50%.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.relative-humidity < 35 THEN set device 11 bedroom 1 humidifier.on = true AND set device 11 bedroom 1 humidifier.target-humidity = 50",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/info/zhimi.humidifier.ca4.json",
+            "IoTBench/IFTTT/home_30/spec/zhimi.humidifier.ca4.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_10",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 relative humidity is above 60%, turn off the bedroom 1 humidifier.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.relative-humidity > 60 THEN set device 11 bedroom 1 humidifier.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/info/zhimi.humidifier.ca4.json",
+            "IoTBench/IFTTT/home_30/spec/zhimi.humidifier.ca4.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_11",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 relative humidity is above 70%, turn on the bedroom 1 dehumidifier; then set the bedroom 1 dehumidifier target humidity to 55%.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.relative-humidity > 70 THEN set device 12 bedroom 1 dehumidifier.on = true AND set device 12 bedroom 1 dehumidifier.target-humidity = 55",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/info/dmaker.derh.50l.json",
+            "IoTBench/IFTTT/home_30/spec/dmaker.derh.50l.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_12",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 relative humidity is below 55%, turn off the bedroom 1 dehumidifier.",
+        "answer": "IF device 8 bedroom 1 temperature-humidity-sensor.relative-humidity < 55 THEN set device 12 bedroom 1 dehumidifier.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/info/dmaker.derh.50l.json",
+            "IoTBench/IFTTT/home_30/spec/dmaker.derh.50l.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_13",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 illumination is above 500 lux, set the bedroom 1 curtain target position to 100%.",
+        "answer": "IF device 7 bedroom 1 illumination-sensor.illumination > 500 THEN set device 10 bedroom 1 curtain.target-position = 100",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/info/lumi.curtain.mcn005.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.curtain.mcn005.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_14",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 1 illumination is below 50 lux, set the bedroom 1 curtain target position to 0%.",
+        "answer": "IF device 7 bedroom 1 illumination-sensor.illumination < 50 THEN set device 10 bedroom 1 curtain.target-position = 0",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/info/lumi.curtain.mcn005.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.curtain.mcn005.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_15",
+        "description": "Create one TAP rule for the home_30 smart home: when the living room motion sensor detects motion and the living room illumination is below 80 lux, turn on the living room color light; then set the living room color light brightness to 70.",
+        "answer": "IF device 14 living room motion-sensor.motion-state == true AND device 15 living room illumination-sensor.illumination < 80 THEN set device 13 living room light.on = true AND set device 13 living room light.brightness = 70",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_16",
+        "description": "Create one TAP rule for the home_30 smart home: when the living room motion sensor detects no motion, turn off the living room white light.",
+        "answer": "IF device 14 living room motion-sensor.motion-state == false THEN set device 16 living room light.on = false",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.mono1.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_17",
+        "description": "Create one TAP rule for the home_30 smart home: when the living room illumination is below 60 lux, turn on the living room \u5e26\u98ce\u6247\u7684color light; then turn on the living room \u5e26\u98ce\u6247\u7684color light.",
+        "answer": "IF device 15 living room illumination-sensor.illumination < 60 THEN set device 17 living room light.on = true AND set device 17 living room fan.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.fancl6.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.fancl6.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_18",
+        "description": "Create one TAP rule for the home_30 smart home: when the living room air purifier PM2.5 density is above 75, turn on the living room air purifier; then set the living room air purifier mode to Auto.",
+        "answer": "IF device 18 living room environment.pm2.5-density > 75 THEN set device 18 living room air-purifier.on = true AND set device 18 living room air-purifier.mode = Auto",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/dmaker.airpurifier.f20.json",
+            "IoTBench/IFTTT/home_30/spec/dmaker.airpurifier.f20.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_19",
+        "description": "Create one TAP rule for the home_30 smart home: when the living room \u7acb\u5f0fair conditioner temperature is above 29 celsius, turn on the living room \u7acb\u5f0fair conditioner; then set the living room \u7acb\u5f0fair conditioner target temperature to 26 celsius.",
+        "answer": "IF device 19 living room environment.temperature > 29 THEN set device 19 living room air-conditioner.on = true AND set device 19 living room air-conditioner.target-temperature = 26",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/spec/xiaomi.aircondition.mc7.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_20",
+        "description": "Create one TAP rule for the home_30 smart home: when the kitchen motion sensor detects motion, turn on the kitchen white light; then turn on the kitchen ceiling fan.",
+        "answer": "IF device 22 kitchen motion-sensor.motion-state == true THEN set device 20 kitchen light.on = true AND set device 23 kitchen ceiling-fan.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.mono1.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.ven_fan.vf3.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.ven_fan.vf3.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_21",
+        "description": "Create one TAP rule for the home_30 smart home: when the kitchen motion sensor detects no motion, set the kitchen ceiling fan off-delay time to 10 minutes.",
+        "answer": "IF device 22 kitchen motion-sensor.motion-state == false THEN set device 23 kitchen ceiling-fan.off-delay-time = 10",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sensor_motion.v2.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.ven_fan.vf3.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.ven_fan.vf3.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_22",
+        "description": "Create one TAP rule for the home_30 smart home: when the kitchen range hood PM2.5 density is above 100, turn on the kitchen range hood; then set the kitchen range hood fan level to High.",
+        "answer": "IF device 21 kitchen environment.pm2.5-density > 100 THEN set device 21 kitchen hood.on = true AND set device 21 kitchen fan-control.fan-level = High",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/cykj.hood.jyj22.json",
+            "IoTBench/IFTTT/home_30/spec/cykj.hood.jyj22.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_23",
+        "description": "Create one TAP rule for the home_30 smart home: when the kitchen left stove level is not Close, turn on the kitchen range hood.",
+        "answer": "IF device 21 kitchen hood-stove-integrate.left-stove-level != Close THEN set device 21 kitchen light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/cykj.hood.jyj22.json",
+            "IoTBench/IFTTT/home_30/spec/cykj.hood.jyj22.json"
+        ]
+    },
+    {
+        "category": "IFTTT",
+        "name": "home_30_tap_24",
+        "description": "Create one TAP rule for the home_30 smart home: when the bedroom 2 temperature is above 28 celsius and the bedroom 2 illumination is below 100 lux, turn on the bedroom 2 air conditioner; then turn on the bedroom 2 color light.",
+        "answer": "IF device 27 bedroom 2 temperature-humidity-sensor.temperature > 28 AND device 26 bedroom 2 illumination-sensor.illumination < 100 THEN set device 25 bedroom 2 air-conditioner.on = true AND set device 24 bedroom 2 light.on = true",
+        "dependencyFiles": [
+            "IoTBench/IFTTT/home_30/info.json",
+            "IoTBench/IFTTT/home_30/devices.json",
+            "IoTBench/IFTTT/home_30/info/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/spec/yeelink.light.color2.json",
+            "IoTBench/IFTTT/home_30/info/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/spec/xiaomi.aircondition.mc7.json",
+            "IoTBench/IFTTT/home_30/info/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/spec/lumi.sen_ill.mgl01.json",
+            "IoTBench/IFTTT/home_30/info/miaomiaoce.sensor_ht.t2.json",
+            "IoTBench/IFTTT/home_30/spec/miaomiaoce.sensor_ht.t2.json"
+        ]
+    }
+]

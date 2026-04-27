@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IoTbench</title>
+  <meta name="description" content="IoTBench — a benchmark for diverse IoT applications, including IFTTT tasks, embedded OS, and sensing tasks." />
+  <title>IoTBench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,13 +16,25 @@
   <header class="hero">
     <div class="hero-content">
       <h1 class="title">IoTBench</h1>
-      <p class="subtitle">A Benchmark for Diverse IoT Applications</p>
+      <p class="subtitle">A benchmark for diverse IoT applications, including IFTTT tasks, embedded OS, and sensing tasks.</p>
 
       <div class="hero-buttons">
-        <a href="#" class="btn"><span>📄</span> Paper</a>
-        <a href="#" class="btn"><span>💻</span> Code</a>
-        <a href="#" class="btn"><span>🗄️</span> Data</a>
-        <a href="#" class="btn primary"><span>⬆️</span> Submit</a>
+        <a href="#" class="btn">
+          <span class="btn-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+          Paper
+        </a>
+        <a href="#" class="btn">
+          <span class="btn-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          Code
+        </a>
+        <a href="dataset.html" class="btn">
+          <span class="btn-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+          Data
+        </a>
+        <a href="submit.html" class="btn primary">
+          <span class="btn-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
+          Submit
+        </a>
       </div>
     </div>
   </header>
@@ -32,49 +48,36 @@
 
   <!-- ===== LEADERBOARD ===== -->
   <section class="leaderboard">
-    <h2>Leaderboard</h2>
+    <div class="leaderboard-card">
+    <div class="leaderboard-header">
+      <h2>Leaderboard</h2>
+      <p class="leaderboard-hint" id="leaderboard-hint">Filter by platform · click metric headers to sort</p>
+    </div>
 
-    <!-- Language Tabs -->
-    <div class="lang-tabs">
-      <button class="lang-tab active">All</button>
-      <button class="lang-tab">ESP32</button>
-      <button class="lang-tab">Arduino</button>
-      <button class="lang-tab">STM32</button>
-      <button class="lang-tab">RIOT</button>
-      <button class="lang-tab">Zephyr</button>
-      <button class="lang-tab">Contiki</button>
-      <button class="lang-tab">FreeRTOS</button>
-      <button class="lang-tab">Sensing</button>
-      <button class="lang-tab">IFTTT</button>
-      <button class="lang-tab">Driver</button>
+    <!-- Language Tabs：第一行 All + Embedded；第二行 OS / Sensing / IFTTT -->
+    <div class="lang-tabs" role="tablist" aria-label="Platform filter">
+      <button type="button" class="lang-tab active" data-lang="All" data-theme="all">All</button>
+      <button type="button" class="lang-tab lang-tab--cluster" data-lang="ESP32" data-theme="embed">Embedded IoT: ESP32</button>
+      <button type="button" class="lang-tab" data-lang="Arduino" data-theme="embed">Embedded IoT: Arduino</button>
+      <button type="button" class="lang-tab" data-lang="STM32" data-theme="embed">Embedded IoT: STM32</button>
+      <button type="button" class="lang-tab" data-lang="RIOT" data-theme="embed">Embedded IoT: RIOT</button>
+      <button type="button" class="lang-tab" data-lang="Zephyr" data-theme="embed">Embedded IoT: Zephyr</button>
+      <button type="button" class="lang-tab" data-lang="Contiki" data-theme="embed">Embedded IoT: Contiki</button>
+      <button type="button" class="lang-tab" data-lang="FreeRTOS" data-theme="embed">Embedded IoT: FreeRTOS</button>
+      <div class="lang-tabs__row-break" role="presentation" aria-hidden="true"></div>
+      <button type="button" class="lang-tab" data-lang="Kernel" data-theme="os">OS: Kernel</button>
+      <button type="button" class="lang-tab" data-lang="Driver" data-theme="os">OS: Driver</button>
+      <button type="button" class="lang-tab lang-tab--cluster" data-lang="Sensing" data-theme="sensing">Sensing</button>
+      <button type="button" class="lang-tab lang-tab--cluster" data-lang="IFTTT" data-theme="ifttt">IFTTT</button>
     </div>
 
     <!-- Table -->
     <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Model</th>
-            <th colspan="4">Metrics(%)</th>
-            <th>Org</th>
-            <th>Date</th>
-            <th>Logs</th>
-            <th>Trajs</th>
-            <th>Site</th>
-          </tr>
-          <tr class="subhead">
-            <th></th>
-            <th>API</th>
-            <th>Header</th>
-            <th>Compliation</th>
-            <th>Pass</th>
-            <th colspan="5"></th>
-          </tr>
-        </thead>
-        <tbody id="leaderboard-body">
-          <!-- JS 动态填充 -->
-        </tbody>
+      <table id="leaderboard-table" class="leaderboard-grid">
+        <thead id="leaderboard-thead"></thead>
+        <tbody id="leaderboard-body"></tbody>
       </table>
+    </div>
     </div>
   </section>
 

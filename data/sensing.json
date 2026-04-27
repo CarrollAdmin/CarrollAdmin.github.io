@@ -1,0 +1,178 @@
+[
+    {
+        "category": "Sensing",
+        "name": "ecg_heartbeat_detection",
+        "source": "AutoIOT",
+        "source_url": "https://lemingshen.github.io/projects/autoiot/",
+        "source_repository": "https://github.com/lemingshen/AutoIOT",
+        "source_dataset_url": "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1",
+        "source_note": "AutoIOT evaluates four representative AIoT sensing applications; dataset download is linked by the project README.",
+        "modality": "ECG",
+        "description": "Implement an ECG heartbeat detection program that reads MIT-BIH-style ECG records, preprocesses the waveform, detects R-peaks, and reports heartbeat positions and evaluation metrics.",
+        "expected_output": "Executable Python program with detected R-peak indices, heartbeat count, accuracy within a tolerance window, and MAE against annotations.",
+        "test_points": [
+            {
+                "id": "tp1",
+                "metric": "input_contract",
+                "expected": "Accept an ECG dataset path or record folder as input."
+            },
+            {
+                "id": "tp2",
+                "metric": "preprocessing",
+                "expected": "Apply ECG-appropriate filtering or denoising before peak detection."
+            },
+            {
+                "id": "tp3",
+                "metric": "algorithm",
+                "expected": "Use an R-peak detection method suitable for ECG, such as adaptive thresholding, Pan-Tompkins-style processing, wavelet processing, or comparable logic."
+            },
+            {
+                "id": "tp4",
+                "metric": "output_contract",
+                "expected": "Return or print detected R-peak sample indices and heartbeat count."
+            },
+            {
+                "id": "tp5",
+                "metric": "evaluation",
+                "expected": "Compute detection accuracy within a tolerance window and MAE versus ground truth annotations."
+            }
+        ],
+        "dependencies": [
+            "https://github.com/lemingshen/AutoIOT",
+            "https://lemingshen.github.io/projects/autoiot/",
+            "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1"
+        ]
+    },
+    {
+        "category": "Sensing",
+        "name": "imu_har",
+        "source": "AutoIOT",
+        "source_url": "https://lemingshen.github.io/projects/autoiot/",
+        "source_repository": "https://github.com/lemingshen/AutoIOT",
+        "source_dataset_url": "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1",
+        "source_note": "AutoIOT evaluates four representative AIoT sensing applications; dataset download is linked by the project README.",
+        "modality": "IMU",
+        "description": "Implement an IMU-based human activity recognition pipeline for WISDM-style accelerometer data, including preprocessing, windowing, feature extraction or model training, and activity classification.",
+        "expected_output": "Executable Python program that predicts activity labels and reports classification accuracy on held-out data.",
+        "test_points": [
+            {
+                "id": "tp1",
+                "metric": "input_contract",
+                "expected": "Read WISDM-style raw IMU records with user, activity, timestamp, and axis values."
+            },
+            {
+                "id": "tp2",
+                "metric": "preprocessing",
+                "expected": "Clean malformed rows and normalize or standardize accelerometer channels."
+            },
+            {
+                "id": "tp3",
+                "metric": "segmentation",
+                "expected": "Segment the stream into fixed or sliding windows suitable for HAR."
+            },
+            {
+                "id": "tp4",
+                "metric": "algorithm",
+                "expected": "Train or apply a classifier for activity labels using time-domain, frequency-domain, or learned features."
+            },
+            {
+                "id": "tp5",
+                "metric": "evaluation",
+                "expected": "Report classification accuracy and preserve label mapping."
+            }
+        ],
+        "dependencies": [
+            "https://github.com/lemingshen/AutoIOT",
+            "https://lemingshen.github.io/projects/autoiot/",
+            "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1"
+        ]
+    },
+    {
+        "category": "Sensing",
+        "name": "mmwave_har",
+        "source": "AutoIOT",
+        "source_url": "https://lemingshen.github.io/projects/autoiot/",
+        "source_repository": "https://github.com/lemingshen/AutoIOT",
+        "source_dataset_url": "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1",
+        "source_note": "AutoIOT evaluates four representative AIoT sensing applications; dataset download is linked by the project README.",
+        "modality": "mmWave",
+        "description": "Implement a mmWave-based human activity recognition pipeline for an XRF55-style dataset, processing high-dimensional radar data and classifying activities.",
+        "expected_output": "Executable Python program that loads mmWave samples, trains or applies a model, and reports activity classification accuracy.",
+        "test_points": [
+            {
+                "id": "tp1",
+                "metric": "input_contract",
+                "expected": "Accept a folder of mmWave samples and labels."
+            },
+            {
+                "id": "tp2",
+                "metric": "preprocessing",
+                "expected": "Normalize high-dimensional mmWave tensors or feature maps before classification."
+            },
+            {
+                "id": "tp3",
+                "metric": "algorithm",
+                "expected": "Use a model appropriate for radar/HAR data, such as a CNN or ResNet-style classifier."
+            },
+            {
+                "id": "tp4",
+                "metric": "resource",
+                "expected": "Account for high dimensionality with batching, compact tensors, or efficient loaders."
+            },
+            {
+                "id": "tp5",
+                "metric": "evaluation",
+                "expected": "Report classification accuracy on a validation or test split."
+            }
+        ],
+        "dependencies": [
+            "https://github.com/lemingshen/AutoIOT",
+            "https://lemingshen.github.io/projects/autoiot/",
+            "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1"
+        ]
+    },
+    {
+        "category": "Sensing",
+        "name": "multimodal_har",
+        "source": "AutoIOT",
+        "source_url": "https://lemingshen.github.io/projects/autoiot/",
+        "source_repository": "https://github.com/lemingshen/AutoIOT",
+        "source_dataset_url": "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1",
+        "source_note": "AutoIOT evaluates four representative AIoT sensing applications; dataset download is linked by the project README.",
+        "modality": "multimodal",
+        "description": "Implement a multimodal human activity recognition pipeline that combines multiple sensor modalities with separate encoders and a fusion classifier.",
+        "expected_output": "Executable Python program that loads multimodal sensor features, fuses modality representations, predicts activities, and reports accuracy plus resource metrics when available.",
+        "test_points": [
+            {
+                "id": "tp1",
+                "metric": "input_contract",
+                "expected": "Load synchronized samples from multiple modalities."
+            },
+            {
+                "id": "tp2",
+                "metric": "architecture",
+                "expected": "Use separate encoders or feature extractors before fusion."
+            },
+            {
+                "id": "tp3",
+                "metric": "fusion",
+                "expected": "Concatenate, attend over, or otherwise combine modality embeddings before classification."
+            },
+            {
+                "id": "tp4",
+                "metric": "resource",
+                "expected": "Support a memory-aware or efficient configuration for edge deployment."
+            },
+            {
+                "id": "tp5",
+                "metric": "evaluation",
+                "expected": "Report classification accuracy and inference-time or memory metrics if available."
+            }
+        ],
+        "dependencies": [
+            "https://github.com/lemingshen/AutoIOT",
+            "https://lemingshen.github.io/projects/autoiot/",
+            "https://mypikpak.com/s/VOOMZ8bBd1AtByZBwyeqLvLDo1"
+        ]
+    }
+]

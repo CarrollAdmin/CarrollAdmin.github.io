@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IoTBench — per-task RIOT results for a single method." />
+  <title>Task breakdown — IoTBench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-method-detail">
+  <header class="hero hero--compact">
+    <div class="hero-content">
+      <a class="back-link" href="index.html">← Back to leaderboard</a>
+      <h1 class="title title--detail" id="page-title">Method</h1>
+      <p class="subtitle" id="page-subtitle">Loading…</p>
+    </div>
+  </header>
+
+  <section class="leaderboard">
+    <div class="leaderboard-card">
+      <div class="task-stats" id="task-stats" aria-live="polite"></div>
+      <div class="table-wrapper">
+        <table class="leaderboard-grid task-detail-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Task (Program)</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="task-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="data/iotbench-inline.js"></script>
+  <script src="method-tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+Program,Method, Result
+coap,Claude Code + GPT5.4,0
+eventperiodic,Claude Code + GPT5.4,1
+flash,Claude Code + GPT5.4,0
+irq,Claude Code + GPT5.4,1
+mbox,Claude Code + GPT5.4,0
+mma,Claude Code + GPT5.4,1
+mpu,Claude Code + GPT5.4,0
+pahomqtt,Claude Code + GPT5.4,0
+rtc,Claude Code + GPT5.4,0
+thread,Claude Code + GPT5.4,1
+posixsockets,Claude Code + GPT5.4,0
+xtimer,Claude Code + GPT5.4,1
+dht11_monitor,Claude Code + GPT5.4,1
+dht11_sensor,Claude Code + GPT5.4,1
+emcute,Claude Code + GPT5.4,0
+ipc_msg,Claude Code + GPT5.4,1
+mpu6050_loop,Claude Code + GPT5.4,0
+breathing_led,Claude Code + GPT5.4,1
+fall_detection,Claude Code + GPT5.4,0
+impact_recorder,Claude Code + GPT5.4,0
+imu_mqtt,Claude Code + GPT5.4,0
+mpu6050_mqtt_loop,Claude Code + GPT5.4,0
+coap,Cursor + Composer 2 Fast,1
+eventperiodic,Cursor + Composer 2 Fast,1
+flash,Cursor + Composer 2 Fast,1
+irq,Cursor + Composer 2 Fast,1
+mbox,Cursor + Composer 2 Fast,0
+mma,Cursor + Composer 2 Fast,1
+mpu9x50,Cursor + Composer 2 Fast,0
+pahomqtt,Cursor + Composer 2 Fast,0
+rtc,Cursor + Composer 2 Fast,1
+thread,Cursor + Composer 2 Fast,1
+posixsockets,Cursor + Composer 2 Fast,0
+xtimer,Cursor + Composer 2 Fast,1
+dht11_monitor,Cursor + Composer 2 Fast,1
+dht11_sensor,Cursor + Composer 2 Fast,0
+emcute,Cursor + Composer 2 Fast,0
+ipc_msg,Cursor + Composer 2 Fast,1
+mpu6050_loop,Cursor + Composer 2 Fast,0
+breathing_led,Cursor + Composer 2 Fast,1
+fall_detection,Cursor + Composer 2 Fast,1
+impact_recorder,Cursor + Composer 2 Fast,1
+imu_mqtt,Cursor + Composer 2 Fast,0
+mpu6050_mqtt_loop,Cursor + Composer 2 Fast,0
+coap,Claude + Claude Sonnet 4.6,0
+eventperiodic,Claude + Claude Sonnet 4.6,1
+flash,Claude + Claude Sonnet 4.6,1
+irq,Claude + Claude Sonnet 4.6,1
+mbox,Claude + Claude Sonnet 4.6,1
+mma,Claude + Claude Sonnet 4.6,1
+mpu9x50,Claude + Claude Sonnet 4.6,0
+pahomqtt,Claude + Claude Sonnet 4.6,0
+rtc,Claude + Claude Sonnet 4.6,1
+thread,Claude + Claude Sonnet 4.6,1
+posixsockets,Claude + Claude Sonnet 4.6,0
+xtimer,Claude + Claude Sonnet 4.6,1
+dht11_monitor,Claude + Claude Sonnet 4.6,1
+dht11_sensor,Claude + Claude Sonnet 4.6,1
+emcute,Claude + Claude Sonnet 4.6,0
+ipc_msg,Claude + Claude Sonnet 4.6,1
+mpu6050_loop,Claude + Claude Sonnet 4.6,0
+breathing_led,Claude + Claude Sonnet 4.6,0
+fall_detection,Claude + Claude Sonnet 4.6,0
+impact_recorder,Claude + Claude Sonnet 4.6,0
+imu_mqtt,Claude + Claude Sonnet 4.6,0
+mpu6050_mqtt_loop,Claude + Claude Sonnet 4.6,0
+coap,AutoIoT + DeepSeek V3.2,1
+eventperiodic,AutoIoT + DeepSeek V3.2,1
+flash,AutoIoT + DeepSeek V3.2,1
+irq,AutoIoT + DeepSeek V3.2,1
+mbox,AutoIoT + DeepSeek V3.2,1
+mma,AutoIoT + DeepSeek V3.2,1
+mpu9x50,AutoIoT + DeepSeek V3.2,1
+pahomqtt,AutoIoT + DeepSeek V3.2,1
+rtc,AutoIoT + DeepSeek V3.2,1
+thread,AutoIoT + DeepSeek V3.2,1
+posixsockets,AutoIoT + DeepSeek V3.2,0
+xtimer,AutoIoT + DeepSeek V3.2,1
+dht11_monitor,AutoIoT + DeepSeek V3.2,1
+dht11_sensor,AutoIoT + DeepSeek V3.2,1
+emcute,AutoIoT + DeepSeek V3.2,1
+ipc_msg,AutoIoT + DeepSeek V3.2,1
+mpu6050_loop,AutoIoT + DeepSeek V3.2,1
+breathing_led,AutoIoT + DeepSeek V3.2,1
+fall_detection,AutoIoT + DeepSeek V3.2,1
+impact_recorder,AutoIoT + DeepSeek V3.2,1
+imu_mqtt,AutoIoT + DeepSeek V3.2,0
+mpu6050_mqtt_loop,AutoIoT + DeepSeek V3.2,1
+coap,ChatIoT + DeepSeek V3.2,0
+eventperiodic,ChatIoT + DeepSeek V3.2,1
+flash,ChatIoT + DeepSeek V3.2,1
+irq,ChatIoT + DeepSeek V3.2,1
+mbox,ChatIoT + DeepSeek V3.2,1
+mma,ChatIoT + DeepSeek V3.2,1
+mpu9x50,ChatIoT + DeepSeek V3.2,0
+pahomqtt,ChatIoT + DeepSeek V3.2,0
+rtc,ChatIoT + DeepSeek V3.2,1
+thread,ChatIoT + DeepSeek V3.2,1
+posixsockets,ChatIoT + DeepSeek V3.2,0
+xtimer,ChatIoT + DeepSeek V3.2,1
+dht11_monitor,ChatIoT + DeepSeek V3.2,0
+dht11_sensor,ChatIoT + DeepSeek V3.2,1
+emcute,ChatIoT + DeepSeek V3.2,1
+ipc_msg,ChatIoT + DeepSeek V3.2,0
+mpu6050_loop,ChatIoT + DeepSeek V3.2,0
+breathing_led,ChatIoT + DeepSeek V3.2,0
+fall_detection,ChatIoT + DeepSeek V3.2,0
+impact_recorder,ChatIoT + DeepSeek V3.2,0
+imu_mqtt,ChatIoT + DeepSeek V3.2,0
+mpu6050_mqtt_loop,ChatIoT + DeepSeek V3.2,0
+coap,SELF-DEBUG + DeepSeek V3.2,0
+eventperiodic,SELF-DEBUG + DeepSeek V3.2,0
+flash,SELF-DEBUG + DeepSeek V3.2,1
+irq,SELF-DEBUG + DeepSeek V3.2,1
+mbox,SELF-DEBUG + DeepSeek V3.2,0
+mma,SELF-DEBUG + DeepSeek V3.2,0
+mpu9x50,SELF-DEBUG + DeepSeek V3.2,1
+pahomqtt,SELF-DEBUG + DeepSeek V3.2,0
+rtc,SELF-DEBUG + DeepSeek V3.2,1
+thread,SELF-DEBUG + DeepSeek V3.2,1
+posixsockets,SELF-DEBUG + DeepSeek V3.2,0
+xtimer,SELF-DEBUG + DeepSeek V3.2,1
+dht11_monitor,SELF-DEBUG + DeepSeek V3.2,0
+dht11_sensor,SELF-DEBUG + DeepSeek V3.2,1
+emcute,SELF-DEBUG + DeepSeek V3.2,1
+ipc_msg,SELF-DEBUG + DeepSeek V3.2,1
+mpu6050_loop,SELF-DEBUG + DeepSeek V3.2,1
+breathing_led,SELF-DEBUG + DeepSeek V3.2,1
+fall_detection,SELF-DEBUG + DeepSeek V3.2,1
+impact_recorder,SELF-DEBUG + DeepSeek V3.2,1
+imu_mqtt,SELF-DEBUG + DeepSeek V3.2,0
+mpu6050_mqtt_loop,SELF-DEBUG + DeepSeek V3.2,0
+coap,IoTPilot + DeepSeek V3.2,1
+eventperiodic,IoTPilot + DeepSeek V3.2,1
+flash,IoTPilot + DeepSeek V3.2,1
+irq,IoTPilot + DeepSeek V3.2,1
+mbox,IoTPilot + DeepSeek V3.2,1
+mma,IoTPilot + DeepSeek V3.2,1
+mpu9x50,IoTPilot + DeepSeek V3.2,1
+pahomqtt,IoTPilot + DeepSeek V3.2,1
+rtc,IoTPilot + DeepSeek V3.2,1
+thread,IoTPilot + DeepSeek V3.2,1
+posixsockets,IoTPilot + DeepSeek V3.2,0
+xtimer,IoTPilot + DeepSeek V3.2,1
+dht11_monitor,IoTPilot + DeepSeek V3.2,1
+dht11_sensor,IoTPilot + DeepSeek V3.2,1
+emcute,IoTPilot + DeepSeek V3.2,0
+ipc_msg,IoTPilot + DeepSeek V3.2,1
+mpu6050_loop,IoTPilot + DeepSeek V3.2,1
+breathing_led,IoTPilot + DeepSeek V3.2,1
+fall_detection,IoTPilot + DeepSeek V3.2,1
+impact_recorder,IoTPilot + DeepSeek V3.2,1
+imu_mqtt,IoTPilot + DeepSeek V3.2,1
+mpu6050_mqtt_loop,IoTPilot + DeepSeek V3.2,1
+coap,ChatIoT + GPT-5.4,0
+eventperiodic,ChatIoT + GPT-5.4,0
+flash,ChatIoT + GPT-5.4,1
+irq,ChatIoT + GPT-5.4,1
+mbox,ChatIoT + GPT-5.4,0
+mma,ChatIoT + GPT-5.4,0
+mpu9x50,ChatIoT + GPT-5.4,1
+pahomqtt,ChatIoT + GPT-5.4,1
+rtc,ChatIoT + GPT-5.4,1
+thread,ChatIoT + GPT-5.4,1
+posixsockets,ChatIoT + GPT-5.4,0
+xtimer,ChatIoT + GPT-5.4,0
+dht11_monitor,ChatIoT + GPT-5.4,0
+dht11_sensor,ChatIoT + GPT-5.4,0
+emcute,ChatIoT + GPT-5.4,1
+ipc_msg,ChatIoT + GPT-5.4,1
+mpu6050_loop,ChatIoT + GPT-5.4,0
+breathing_led,ChatIoT + GPT-5.4,0
+fall_detection,ChatIoT + GPT-5.4,0
+impact_recorder,ChatIoT + GPT-5.4,0
+imu_mqtt,ChatIoT + GPT-5.4,1
+mpu6050_mqtt_loop,ChatIoT + GPT-5.4,0
+coap,AutoIoT + GPT-5.4,0
+eventperiodic,AutoIoT + GPT-5.4,1
+flash,AutoIoT + GPT-5.4,1
+irq,AutoIoT + GPT-5.4,1
+mbox,AutoIoT + GPT-5.4,1
+mma,AutoIoT + GPT-5.4,1
+mpu9x50,AutoIoT + GPT-5.4,1
+pahomqtt,AutoIoT + GPT-5.4,1
+rtc,AutoIoT + GPT-5.4,1
+thread,AutoIoT + GPT-5.4,1
+posixsockets,AutoIoT + GPT-5.4,0
+xtimer,AutoIoT + GPT-5.4,1
+dht11_monitor,AutoIoT + GPT-5.4,1
+dht11_sensor,AutoIoT + GPT-5.4,1
+emcute,AutoIoT + GPT-5.4,1
+ipc_msg,AutoIoT + GPT-5.4,1
+mpu6050_loop,AutoIoT + GPT-5.4,1
+breathing_led,AutoIoT + GPT-5.4,1
+fall_detection,AutoIoT + GPT-5.4,1
+impact_recorder,AutoIoT + GPT-5.4,1
+imu_mqtt,AutoIoT + GPT-5.4,1
+mpu6050_mqtt_loop,AutoIoT + GPT-5.4,1
+coap,Cursor + GPT-5.4,1
+eventperiodic,Cursor + GPT-5.4,0
+flash,Cursor + GPT-5.4,0
+irq,Cursor + GPT-5.4,1
+mbox,Cursor + GPT-5.4,0
+mma,Cursor + GPT-5.4,1
+mpu9x50,Cursor + GPT-5.4,1
+pahomqtt,Cursor + GPT-5.4,0
+rtc,Cursor + GPT-5.4,1
+thread,Cursor + GPT-5.4,1
+posixsockets,Cursor + GPT-5.4,0
+xtimer,Cursor + GPT-5.4,1
+dht11_monitor,Cursor + GPT-5.4,1
+dht11_sensor,Cursor + GPT-5.4,1
+emcute,Cursor + GPT-5.4,0
+ipc_msg,Cursor + GPT-5.4,1
+mpu6050_loop,Cursor + GPT-5.4,0
+breathing_led,Cursor + GPT-5.4,1
+fall_detection,Cursor + GPT-5.4,0
+impact_recorder,Cursor + GPT-5.4,0
+imu_mqtt,Cursor + GPT-5.4,0
+mpu6050_mqtt_loop,Cursor + GPT-5.4,0
+coap,IoTPilot+ GPT-5.4,1
+eventperiodic,IoTPilot+ GPT-5.4,1
+flash,IoTPilot+ GPT-5.4,1
+irq,IoTPilot+ GPT-5.4,0
+mbox,IoTPilot+ GPT-5.4,0
+mma,IoTPilot+ GPT-5.4,0
+mpu9x50,IoTPilot+ GPT-5.4,1
+pahomqtt,IoTPilot+ GPT-5.4,1
+rtc,IoTPilot+ GPT-5.4,1
+thread,IoTPilot+ GPT-5.4,1
+posixsockets,IoTPilot+ GPT-5.4,1
+xtimer,IoTPilot+ GPT-5.4,1
+dht11_monitor,IoTPilot+ GPT-5.4,1
+dht11_sensor,IoTPilot+ GPT-5.4,1
+emcute,IoTPilot+ GPT-5.4,1
+ipc_msg,IoTPilot+ GPT-5.4,1
+mpu6050_loop,IoTPilot+ GPT-5.4,1
+breathing_led,IoTPilot+ GPT-5.4,1
+fall_detection,IoTPilot+ GPT-5.4,1
+impact_recorder,IoTPilot+ GPT-5.4,0
+imu_mqtt,IoTPilot+ GPT-5.4,1
+mpu6050_mqtt_loop,IoTPilot+ GPT-5.4,1
+coap,SELF-DEBUG + GPT-5.4,1
+eventperiodic,SELF-DEBUG + GPT-5.4,1
+flash,SELF-DEBUG + GPT-5.4,1
+irq,SELF-DEBUG + GPT-5.4,1
+mbox,SELF-DEBUG + GPT-5.4,0
+mma,SELF-DEBUG + GPT-5.4,1
+mpu9x50,SELF-DEBUG + GPT-5.4,0
+pahomqtt,SELF-DEBUG + GPT-5.4,1
+rtc,SELF-DEBUG + GPT-5.4,1
+thread,SELF-DEBUG + GPT-5.4,0
+posixsockets,SELF-DEBUG + GPT-5.4,1
+xtimer,SELF-DEBUG + GPT-5.4,1
+dht11_monitor,SELF-DEBUG + GPT-5.4,1
+dht11_sensor,SELF-DEBUG + GPT-5.4,1
+emcute,SELF-DEBUG + GPT-5.4,1
+ipc_msg,SELF-DEBUG + GPT-5.4,1
+mpu6050_loop,SELF-DEBUG + GPT-5.4,1
+breathing_led,SELF-DEBUG + GPT-5.4,1
+fall_detection,SELF-DEBUG + GPT-5.4,1
+impact_recorder,SELF-DEBUG + GPT-5.4,1
+imu_mqtt,SELF-DEBUG + GPT-5.4,0
+mpu6050_mqtt_loop,SELF-DEBUG + GPT-5.4,1

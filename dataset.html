@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IoTBench dataset overview and task descriptions." />
+  <title>IoTBench Dataset</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-doc page-dataset">
+  <header class="hero hero--compact hero--doc-head">
+    <div class="hero-content hero-content--doc">
+      <a class="back-link" href="index.html">← Back to IoTBench</a>
+      <h1 class="title title--detail">IoTBench Dataset</h1>
+      <p class="subtitle dataset-subtitle">
+        JSON <code>category</code> is the short key (e.g. <code>RIOT</code>, <code>Kernel</code>, <code>ESP32</code>); the tabs match the leaderboard. <strong>All</strong> shows one block per category.
+      </p>
+    </div>
+  </header>
+
+  <main class="doc-main">
+    <section class="leaderboard-card dataset-panel">
+      <div class="dataset-toolbar">
+        <div class="dataset-stats" id="dataset-stats" aria-live="polite"></div>
+        <div class="dataset-actions">
+          <input
+            id="dataset-search"
+            class="dataset-search"
+            type="search"
+            placeholder="Search by task name, category, or description"
+            aria-label="Search dataset"
+          />
+          <a class="btn dataset-raw-link" href="data/iotbench.json" target="_blank" rel="noopener noreferrer">Raw JSON</a>
+        </div>
+      </div>
+
+      <div class="lang-tabs dataset-cat-tabs" id="dataset-cat-tabs" role="tablist" aria-label="Benchmark category"></div>
+
+      <div id="dataset-list"></div>
+    </section>
+  </main>
+
+  <script src="data/iotbench-data.js"></script>
+  <script src="data/ifttt-files.js"></script>
+  <script src="dataset.js"></script>
+</body>
+</html>
