@@ -84,7 +84,11 @@ function datasetEscapeHtml(value) {
 }
 
 function stripDependencyText(description) {
-  return String(description || "").replace(/\s*Dependent files:\s*.*$/i, "").trim();
+  return String(description || "")
+    .replace(/\s*Module family:\s*.*?\.\s*(?=Input:|Output:|$)/i, " ")
+    .replace(/\s*Dependent files:\s*.*$/i, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 function extractDependencyFiles(description) {

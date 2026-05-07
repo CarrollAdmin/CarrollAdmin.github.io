@@ -881,6 +881,239 @@ table.task-detail-table .td-task-name {
   line-height: 1.6;
 }
 
+.submit-panel {
+  max-width: 980px;
+}
+
+.submit-form {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.source-spec {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.source-spec h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.source-spec ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.source-spec li {
+  margin-bottom: 0.35rem;
+}
+
+.submit-field {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.submit-label {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.submit-help {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.submit-field input[type="text"],
+.submit-field input[type="file"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f8fafc;
+  color: var(--text-primary);
+  font: inherit;
+}
+
+.submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.btn--small {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.submit-button {
+  width: fit-content;
+}
+
+.submit-button:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+
+.benchmark-list {
+  display: grid;
+  gap: 0.75rem;
+  max-height: 460px;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+
+.benchmark-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.benchmark-option input {
+  margin-top: 0.25rem;
+}
+
+.benchmark-option strong,
+.benchmark-option small {
+  display: block;
+}
+
+.benchmark-option small {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.job-status {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.job-status h2,
+.result-card h3 {
+  margin: 0;
+}
+
+.result-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.job-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.summary-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.summary-card strong {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.summary-card span {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.result-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.result-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-pill--success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pill--failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-pill--running,
+.status-pill--generating,
+.status-pill--compiling {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.result-details {
+  margin-top: 0.7rem;
+}
+
+.result-details summary {
+  cursor: pointer;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.result-details pre {
+  max-height: 340px;
+  overflow: auto;
+  padding: 0.85rem;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.submit-error {
+  color: #b91c1c;
+}
+
 /* ===== Dataset page (dataset.html) ===== */
 .dataset-subtitle {
   max-width: 42rem;

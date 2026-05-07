@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="How to submit your model to the IoTBench leaderboard." />
-  <title>Submit to IoTBench Leaderboard</title>
+  <meta name="description" content="Submit a method source package and evaluate it on RIOT IoTBench tasks." />
+  <title>Submit to IoTBench</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -14,22 +14,67 @@
   <header class="hero hero--compact hero--doc-head">
     <div class="hero-content hero-content--doc">
       <a class="back-link" href="index.html">← Back to IoTBench</a>
-      <h1 class="title title--detail">Submit to IoTBench Leaderboard</h1>
+      <h1 class="title title--detail">Submit to IoTBench</h1>
     </div>
   </header>
 
   <main class="doc-main">
-    <article class="leaderboard-card doc-article">
+    <article class="leaderboard-card doc-article submit-panel">
       <p class="doc-lead">
-        If you are interested in submitting your model to the
-        <a class="doc-a doc-a--emph" href="index.html">IoTBench Leaderboard</a>, please follow the steps below.
+        Upload your method source code, select RIOT/ESP32 benchmarks, generate applications, and run automated LinkLab compile/run evaluation.
       </p>
 
-      <p class="doc-note">
-        Questions or custom benchmark splits? Open an issue on
-        <a class="doc-a" href="https://github.com/CarrollAdmin/CarrollAdmin.github.io/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.
-      </p>
+      <section class="source-spec">
+        <h2>source.zip requirements</h2>
+        <ul>
+          <li>The zip must contain `run.py` at the root, or inside one top-level folder. If you use another path, fill it in below.</li>
+          <li>The server runs: `python run.py --bench &lt;bench_json&gt; --output &lt;app_dir&gt;`.</li>
+          <li>`&lt;bench_json&gt;` is one selected RIOT/ESP32 IoTBench task.</li>
+          <li>`&lt;app_dir&gt;` must be a generated RIOT app directory containing `Makefile` and source files.</li>
+          <li>The generated `Makefile` must be at the app root, include `APPLICATION = &lt;letters_digits_or_underscores&gt;`, `BOARD ?= esp32-wroom-32`, `RIOTBASE ?= $(CURDIR)/../../..`, and `include $(RIOTBASE)/Makefile.include`; do not use `$(CURDIR)/../../...`, absolute `RIOTBASE` paths, or paths containing `Runtime/RIOT`.</li>
+          <li>Do not write outside `&lt;app_dir&gt;`; keep temporary files inside the uploaded source folder or output folder.</li>
+        </ul>
+      </section>
+
+      <form id="submit-form" class="submit-form">
+        <label class="submit-field">
+          <span class="submit-label">Method source zip</span>
+          <input id="method-zip" name="method_zip" type="file" accept=".zip" required />
+        </label>
+
+        <label class="submit-field">
+          <span class="submit-label">Python run script</span>
+          <input id="script-path" name="script_path" type="text" value="run.py" required />
+          <span class="submit-help">The server runs: python run.py --bench &lt;bench_json&gt; --output &lt;app_dir&gt;</span>
+        </label>
+
+        <section class="submit-field">
+          <div class="submit-row">
+            <span class="submit-label">RIOT/ESP32 benchmarks</span>
+            <button id="select-all-benches" class="btn btn--small" type="button">Select all</button>
+          </div>
+          <div id="benchmark-list" class="benchmark-list" aria-live="polite">
+            <p class="submit-help">Loading benchmarks...</p>
+          </div>
+        </section>
+
+        <button id="submit-job" class="btn primary submit-button" type="submit">Start Evaluation</button>
+      </form>
+
+      <section id="job-status" class="job-status" hidden>
+        <div class="submit-row">
+          <h2>Evaluation Results</h2>
+          <span id="job-state" class="status-pill">queued</span>
+        </div>
+        <p id="job-meta" class="submit-help"></p>
+        <div id="job-summary" class="job-summary"></div>
+        <div id="result-list" class="result-list"></div>
+      </section>
+
+      <p id="submit-message" class="doc-note" role="status"></p>
     </article>
   </main>
+
+  <script src="submit.js"></script>
 </body>
 </html>
